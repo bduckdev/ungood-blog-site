@@ -1,10 +1,4 @@
-import Navbar from "./components/Navbar";
-
-const appFile = Bun.file(`./public/stupid.js`);
-async function appContents() {
-  const contents = await appFile.text();
-  return contents;
-}
+import Navbar from './components/Navbar';
 
 function Layout({ children }: JSX.ElementChildrenAttribute) {
   return (
@@ -20,7 +14,6 @@ function Layout({ children }: JSX.ElementChildrenAttribute) {
         <header>
           <Navbar />
         </header>
-        <script>{appContents()}</script>
         <main>{children}</main>
         <footer class="footer items-center p-4 bg-neutral text-neutral-content">
           <aside class="items-center grid-flow-col">

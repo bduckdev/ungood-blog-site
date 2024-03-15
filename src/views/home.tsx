@@ -1,4 +1,4 @@
-import Layout from "./layout";
+import Layout from './layout';
 
 async function Home() {
   return (
@@ -22,7 +22,6 @@ async function Home() {
           </div>
         </div>
       </div>
-      <script src="./public/stupid.js" async crossorigin="anonymous"></script>
     </Layout>
   );
 }
